@@ -1,0 +1,132 @@
+/* Sunset Glow Gradient Background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #ff9a9e, #fecfef, #feada6, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Form Container */
+.form-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  animation: floatUp 1.5s ease-in-out;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Form Styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  transition: transform 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Voice Button */
+.voice-input {
+  display: flex;
+  align-items: center;
+}
+
+.voice-input button {
+  margin-left: 5px;
+  background: #ff758c;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.voice-input button:hover {
+  transform: scale(1.1);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background: #ff758c;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #ff7eb3;
+  transform: scale(1.05);
+}
+
+/* Feedback Message */
+#feedback {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+}
+.input-with-mic {
+  display: flex;
+  align-items: center;
+}
+
+.mic-btn {
+  background: #ff7eb3;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mic-btn:hover {
+  background: #ff4f81;
+  transform: scale(1.1);
+}
